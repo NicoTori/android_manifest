@@ -1,15 +1,15 @@
-LiquidRemix
+Nicotori
 ==============
 
 Getting Started
 ----------------
 
-To get started with Android/LiquidRemix, you'll need to get
+To get started with Android/Nicotori, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the LiquidRemix trees, use a command like this:
+To initialize your local repository using the Nicotori trees, use a command like this:
 
-    repo init -u git://github.com/LiquidRemix/android_manifest.git -b ten
+    repo init -u git://github.com/NicotoriROM/android_manifest.git -b ten
 
 Then to sync up:
 

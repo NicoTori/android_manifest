@@ -14,6 +14,10 @@
            fetch="https://github.com/LiquidRemix"
            revision="ten" />
 
+  <remote  name="nicotori"
+           fetch="https://github.com/NicoToriROM"
+           revision="ten" />
+
   <remote  name="lineage"
            fetch="https://github.com/LineageOS"
            revision="refs/heads/lineage-17.0" />
@@ -593,12 +597,12 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
-<!-- Liquid Projects -->
+<!-- Liquid Projects and NicoTori -->
   <project path="art" name="android_art" groups="pdk" remote="liquid" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="liquid" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="liquid" />
   <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="liquid" />
-  <project path="build/make" name="android_build" groups="pdk" remote="liquid" >
+  <project path="build/make" name="android_build" groups="pdk" remote="nicotori" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -618,7 +622,7 @@
   <project path="external/perfetto" name="android_external_perfetto" groups="pdk" remote="liquid" />
   <project path="external/sqlite" name="android_external_sqlite" groups="pdk" remote="liquid" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="liquid" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="nicotori" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="liquid" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="liquid" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="liquid" />
@@ -630,7 +634,7 @@
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
   <project path="packages/apps/PermissionController" name="android_packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
   <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="liquid" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="nicotori" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="liquid" />
@@ -640,9 +644,9 @@
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
   <project path="system/bt" name="android_system_bt" groups="pdk" remote="liquid" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="liquid" />
-  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="liquid" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="nicotori" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="liquid" />
-  <project path="vendor/liquid" name="android_vendor_liquid" groups="pdk" remote="liquid" />
+  <project path="vendor/liquid" name="android_vendor_liquid" groups="pdk" remote="nicotori" />
 
 <!-- Lineage Projects -->
   <project path="device/generic/goldfish" name="android_device_generic_goldfish" groups="pdk" remote="lineage" />
